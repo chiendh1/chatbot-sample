@@ -32,7 +32,7 @@ export default class ChatBotWidget extends React.Component {
         socketUrl={this.props.address}
         socketPath={"/socket.io/"}
         customData={{ language: "en" }} // arbitrary custom data. Stay minimal as this will be added to the socket
-        title={"Chatbot"}
+        title={"AFWERX Bot"}
         params={{
           images: {
             dims: {

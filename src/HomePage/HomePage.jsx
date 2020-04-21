@@ -10,6 +10,10 @@ const Margin = styled.p`
   margin-top: 20px;
 `;
 
+const Image = styled.img`
+  width: 50px;
+`;
+
 const Error = styled.p`
   flex: 1;
   background-color: red;
@@ -65,7 +69,15 @@ class HomePage extends React.Component {
       <div className="col-md-6 col-md-offset-3">
         <div>
           <div>
-            <h1>Hi !</h1>
+            <img
+              width={100}
+              style={{ justifyContent: "center" }}
+              src={process.env.PUBLIC_URL + "/ic_logo.jpeg"}
+              alt="AFWERX Logo"
+            />
+
+            <h2>AFWERX Demo</h2>
+
             <p>You're logged in Chatbot!!</p>
             {this.state.addressChated && (
               <p>Connected: {this.state.addressChated}</p>
